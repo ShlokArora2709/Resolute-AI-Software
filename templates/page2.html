@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+</head>
+<body>
+    <h1>Page 2</h1>
+    <h3>
+        Prediction of test data = {% for i in df%}
+                                    {{i}}
+                                    {% endfor %}
+    </h3>
+    <form action="/classify">
+        <button type="submit">Classify</button>
+    </form>
+    <h3>
+        XGBoost
+    </h3>
+    <p>XGBoost, a widely-used gradient boosting algorithm, is favored for its exceptional performance, flexibility, and interpretability. Renowned for its speed and efficiency, XGBoost is optimized for parallel computing, making it suitable for handling large datasets quickly. It incorporates various regularization techniques to prevent overfitting and improve generalization performance, while providing valuable insights into feature importance for enhanced interpretability. With support for various machine learning tasks and a vibrant community, XGBoost continues to be a go-to choice for data scientists and machine learning practitioners seeking robust and efficient models.
+        
+        Accuracy Achieved = {{Accuracy}}
+    </p>
+</body>
+</html>
